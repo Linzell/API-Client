@@ -1,7 +1,7 @@
 [package]
 name = "kiro"
 description = "A client for the Kiro API"
-version = "0.0.1"
+version = "0.0.2"
 authors = ["Charlie Cohen <linzellart@gmail.com>"]
 homepage = "https://github.com/Linzell/API-Client"
 license = "GNU AGPLv3"
@@ -9,7 +9,7 @@ edition = "2021"
 publish = false
 
 [features]
-default = ["cli", "tracing"]
+default = ["cli", "tracing", "surrealdb"]
 cli = ["clap", "colored", "tempfile"]
 tracing = [
     "opentelemetry",
